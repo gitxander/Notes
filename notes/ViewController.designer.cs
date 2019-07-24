@@ -14,16 +14,25 @@ namespace notes
     [Register ("ViewController")]
     partial class ViewController
     {
-        [Action ("UIButton393_TouchUpInside:")]
+        [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        partial void UIButton393_TouchUpInside (UIKit.UIButton sender);
+        UIKit.UIButton addButton { get; set; }
 
-        [Action ("UIButton401_TouchUpInside:")]
+        [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
-        partial void UIButton401_TouchUpInside (UIKit.UIButton sender);
+        UIKit.UILabel helloLabel { get; set; }
 
         void ReleaseDesignerOutlets ()
         {
+            if (addButton != null) {
+                addButton.Dispose ();
+                addButton = null;
+            }
+
+            if (helloLabel != null) {
+                helloLabel.Dispose ();
+                helloLabel = null;
+            }
         }
     }
 }
