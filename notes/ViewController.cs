@@ -18,6 +18,18 @@ namespace notes
             addButton.TouchUpInside += (s, e) =>
             {
                 helloLabel.Text = "hi there!";
+
+                UILabel label = new UILabel()
+                {
+                    Frame = new CoreGraphics.CGRect(20, 124, View.Bounds.Width - 40, 40),
+                    Text = "Hello, this is a string",
+                    Font = UIFont.FromName("Papyrus", 20f),
+                    TextColor = UIColor.Magenta,
+                    TextAlignment = UITextAlignment.Center
+                };
+
+              
+                View.AddSubview(label);
             };
         }
 
