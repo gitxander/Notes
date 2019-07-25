@@ -23,6 +23,7 @@ namespace notes
 
                 UILabel label = new UILabel()
                 {
+                    // cgrect(edge, top, width, height
                     Frame = new CoreGraphics.CGRect(20, a, View.Bounds.Width - 40, 40),
                     Text = textField.Text,
                     Font = UIFont.FromName("Papyrus", 20f),
