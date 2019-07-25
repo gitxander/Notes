@@ -10,6 +10,8 @@ namespace notes
         {
         }
 
+        private int a = 20;
+
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
@@ -21,12 +23,14 @@ namespace notes
 
                 UILabel label = new UILabel()
                 {
-                    Frame = new CoreGraphics.CGRect(20, 124, View.Bounds.Width - 40, 40),
-                    Text = "Hello, this is a string",
+                    Frame = new CoreGraphics.CGRect(a, 124, View.Bounds.Width - 40, 40),
+                    Text = textField.Text,
                     Font = UIFont.FromName("Papyrus", 20f),
                     TextColor = UIColor.Magenta,
                     TextAlignment = UITextAlignment.Center
                 };
+
+                a += 20;
 
               
                 View.AddSubview(label);
