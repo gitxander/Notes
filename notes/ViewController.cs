@@ -1,13 +1,18 @@
 ﻿using Foundation;
 using System;
+using System.Collections.Generic;
 using UIKit;
 
 namespace notes
 {
     public partial class ViewController : UIViewController
     {
+
+        public List<Entry> allEntry { get; set; }
+
         public ViewController(IntPtr handle) : base(handle)
         {
+            allEntry = new List<Entry>();
         }
 
         private int a = 125;
@@ -32,6 +37,9 @@ namespace notes
                 };
 
                 a += 50;
+                Entry entry = new Entry(textField.Text);
+
+                allEntry.Add(entry);
 
               
                 View.AddSubview(label);
