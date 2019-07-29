@@ -24,6 +24,10 @@ namespace notes
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton showAll { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField textField { get; set; }
 
         void ReleaseDesignerOutlets ()
@@ -36,6 +40,11 @@ namespace notes
             if (helloLabel != null) {
                 helloLabel.Dispose ();
                 helloLabel = null;
+            }
+
+            if (showAll != null) {
+                showAll.Dispose ();
+                showAll = null;
             }
 
             if (textField != null) {
