@@ -20,6 +20,10 @@ namespace notes
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UITableView entryTable { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UILabel helloLabel { get; set; }
 
         [Outlet]
@@ -35,6 +39,11 @@ namespace notes
             if (addButton != null) {
                 addButton.Dispose ();
                 addButton = null;
+            }
+
+            if (entryTable != null) {
+                entryTable.Dispose ();
+                entryTable = null;
             }
 
             if (helloLabel != null) {

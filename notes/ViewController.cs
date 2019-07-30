@@ -43,6 +43,9 @@ namespace notes
 
               
                 View.AddSubview(label);
+
+                entryTable.Source = new EntryTableViewSource(allEntry);
+                entryTable.ReloadData();
             };
         }
 
