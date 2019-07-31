@@ -140,6 +140,10 @@
           <DependentUpon>ShowAllEntryController.cs</DependentUpon>
         </Compile>
         <Compile Include="EntryTableViewSource.cs" />
+        <Compile Include="EntryBodyViewController.cs" />
+        <Compile Include="EntryBodyViewController.designer.cs">
+          <DependentUpon>EntryBodyViewController.cs</DependentUpon>
+        </Compile>
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

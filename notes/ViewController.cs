@@ -24,27 +24,27 @@ namespace notes
 
             addButton.TouchUpInside += (s, e) =>
             {
-                helloLabel.Text = "hi there!";
+                //helloLabel.Text = "hi there!";
 
-                UILabel label = new UILabel()
-                {
-                    // cgrect(edge, top, width, height
-                    Frame = new CoreGraphics.CGRect(20, a, View.Bounds.Width - 40, 40),
-                    Text = textField.Text,
-                    Font = UIFont.FromName("Papyrus", 20f),
-                    TextColor = UIColor.Magenta,
-                    TextAlignment = UITextAlignment.Center
-                };
+                //UILabel label = new UILabel()
+                //{
+                //    // cgrect(edge, top, width, height
+                //    Frame = new CoreGraphics.CGRect(20, a, View.Bounds.Width - 40, 40),
+                //    Text = textField.Text,
+                //    Font = UIFont.FromName("Papyrus", 20f),
+                //    TextColor = UIColor.Magenta,
+                //    TextAlignment = UITextAlignment.Center
+                //};
 
-                a += 50;
+                //a += 50;
                 Entry entry = new Entry(textField.Text);
 
                 allEntry.Add(entry);
 
-              
-                View.AddSubview(label);
 
-                entryTable.Source = new EntryTableViewSource(allEntry);
+                //View.AddSubview(label);
+
+                entryTable.Source = new EntryTableViewSource(allEntry, this);
                 entryTable.ReloadData();
             };
         }
