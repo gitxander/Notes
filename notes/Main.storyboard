@@ -58,7 +58,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue id="3205" destination="3025" kind="show" identifier="EntrySegue"/>
+                                            <segue id="5897" destination="3025" kind="show"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -95,7 +95,7 @@
         </scene>
         <scene sceneID="3024">
             <objects>
-                <viewController id="3025" sceneMemberID="viewController" storyboardIdentifier="entryBodyStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES">
+                <viewController id="3025" sceneMemberID="viewController" storyboardIdentifier="entryBodyStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" customClass="EntryBodyViewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3022"/>
                         <viewControllerLayoutGuide type="bottom" id="3023"/>

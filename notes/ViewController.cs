@@ -49,14 +49,14 @@ namespace notes
             };
         }
 
-        public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
-        {
-            base.PrepareForSegue(segue, sender);
+        //public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
+        //{
+        //    base.PrepareForSegue(segue, sender);
 
-            var allEntryController = segue.DestinationViewController as ShowAllEntryController;
-            if (allEntryController != null)
-                allEntryController.allEntry = allEntry;
-        }
+        //    var allEntryController = segue.DestinationViewController as ShowAllEntryController;
+        //    if (allEntryController != null)
+        //        allEntryController.allEntry = allEntry;
+        //}
 
         public override void DidReceiveMemoryWarning()
         {
