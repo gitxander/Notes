@@ -163,6 +163,7 @@
       <BundleResource Include="Resources\hamster-emoji.png" />
       <BundleResource Include="Resources\koala-emoji.png" />
       <BundleResource Include="Resources\kaf-logo.PNG" />
+      <BundleResource Include="Resources\koala.jpg" />
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

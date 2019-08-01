@@ -45,11 +45,16 @@ namespace notes
             koala.Description = "desc";
 
             animal.Add(koala);
+            selectedAnimal.Description = "Dogs can smell and hear better than humans, " +
+                "but cannot see well in color because they are color blind. " +
+                "Due to the anatomy of the eye, dogs can see better in dim light than humans. " +
+                "They also have a wider field of vision.";
 
             dogButton.TouchUpInside += (s, e) =>
             {
                 //selectedAnimal = animal.Find(x => x.Name == "Dog");
                 selectedAnimal.Name = "Dog";
+                
             };
 
             catButton.TouchUpInside += (s, e) =>

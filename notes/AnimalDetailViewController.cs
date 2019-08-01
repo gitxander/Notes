@@ -17,17 +17,10 @@ namespace notes
         {
             base.ViewWillAppear(animated);
 
-            UILabel label = new UILabel()
-            {
-                // cgrect(edge, top, width, height
-                Frame = new CoreGraphics.CGRect(20, 145, View.Bounds.Width - 40, 40),
-                Text = animal.Name,
-                Font = UIFont.FromName("Papyrus", 20f),
-                TextColor = UIColor.Magenta,
-                TextAlignment = UITextAlignment.Center
-            };
+            nameLabel.Text = animal.Name;
+            descriptionField.Text = animal.Description;
 
-            View.AddSubview(label);
+            animalImage.Image = UIImage.FromBundle(animal.Name.ToLower() + ".jpg");
 
         }
 
