@@ -13,9 +13,9 @@ namespace notes
             animal = new Animal();
         }
 
-        public override void ViewDidLoad()
+        public override void ViewWillAppear(bool animated)
         {
-            base.ViewDidLoad();
+            base.ViewWillAppear(animated);
 
             UILabel label = new UILabel()
             {
@@ -28,6 +28,14 @@ namespace notes
             };
 
             View.AddSubview(label);
+
+        }
+
+        public override void ViewDidLoad()
+        {
+            base.ViewDidLoad();
+
+           
         }
     }
 }
