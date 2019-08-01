@@ -1,56 +1,55 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6127">
-    <device id="ipad9_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6127">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController" storyboardIdentifier="homeViewStoryboard">
+                <viewController storyboardIdentifier="homeViewStoryboard" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="197" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="197">
                                 <rect key="frame" x="172" y="120" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="394" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="394">
                                 <rect key="frame" x="29" y="230" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="+"/>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" borderStyle="roundedRect" minimumFontSize="17" id="992" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="992">
                                 <rect key="frame" x="29" y="284" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2230" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2230">
                                 <rect key="frame" x="29" y="374" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="show"/>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2802" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2802">
                                 <rect key="frame" x="0.0" y="455" width="375" height="357"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2803" reuseIdentifier="entryCellId">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="entryCellId" id="2803">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2803" id="2804">
@@ -58,50 +57,53 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue id="5897" destination="3025" kind="show"/>
+                                            <segue destination="3025" kind="show" id="5897"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="2308"/>
                     <connections>
                         <outlet property="addButton" destination="394" id="name-outlet-394"/>
-                        <outlet property="helloLabel" destination="197" id="name-outlet-197"/>
-                        <outlet property="textField" destination="992" id="name-outlet-992"/>
-                        <outlet property="showAll" destination="2230" id="name-outlet-2230"/>
                         <outlet property="entryTable" destination="2802" id="name-outlet-2802"/>
+                        <outlet property="helloLabel" destination="197" id="name-outlet-197"/>
+                        <outlet property="showAll" destination="2230" id="name-outlet-2230"/>
+                        <outlet property="textField" destination="992" id="name-outlet-992"/>
                     </connections>
-                    <navigationItem title="Title" id="2308" key="navigationItem"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-464" y="-92"/>
         </scene>
+        <!--Navigation Controller-->
         <scene sceneID="2246">
             <objects>
                 <navigationController id="2247" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2249">
-                        <rect key="frame" x="0.0" y="20" width="768" height="50"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue id="3488" destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3488"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2250" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-950" y="-95"/>
         </scene>
+        <!--Entry Body View Controller-->
         <scene sceneID="3024">
             <objects>
-                <viewController id="3025" sceneMemberID="viewController" storyboardIdentifier="entryBodyStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" customClass="EntryBodyViewController">
+                <viewController storyboardIdentifier="entryBodyStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3025" customClass="EntryBodyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3022"/>
                         <viewControllerLayoutGuide type="bottom" id="3023"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3026" customClass="EntryBodyViewController">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -110,141 +112,130 @@
             </objects>
             <point key="canvasLocation" x="-2" y="-98"/>
         </scene>
+        <!--Navigation Controller-->
         <scene sceneID="6126">
             <objects>
                 <navigationController id="6127" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6129">
-                        <rect key="frame" x="0.0" y="20" width="768" height="50"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue id="6182" destination="6136" kind="relationship" relationship="rootViewController"/>
+                        <segue destination="6136" kind="relationship" relationship="rootViewController" id="6182"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6130" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1698" y="909"/>
         </scene>
+        <!--Title-->
         <scene sceneID="6135">
             <objects>
-                <viewController id="6136" sceneMemberID="viewController" customClass="AnimalViewController">
+                <viewController id="6136" customClass="AnimalViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6133"/>
                         <viewControllerLayoutGuide type="bottom" id="6134"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6137">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6396" translatesAutoresizingMaskIntoConstraints="NO" image="kaf-logo.PNG" misplaced="YES">
-                                <rect key="frame" x="48" y="65" width="350" height="300"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kaf-logo.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="6396" fixedFrame="YES">
+                                <rect key="frame" x="18" y="62" width="350" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="193" verticalHuggingPriority="251" id="6397" translatesAutoresizingMaskIntoConstraints="NO" image="dog-emoji.png" misplaced="YES" ambiguous="YES">
-                                <rect key="frame" x="48" y="342" width="150" height="150"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="193" verticalHuggingPriority="251" image="dog-emoji.png" translatesAutoresizingMaskIntoConstraints="NO" id="6397" fixedFrame="YES">
+                                <rect key="frame" x="28" y="342" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6398" translatesAutoresizingMaskIntoConstraints="NO" image="cat-emoji.png" misplaced="YES" ambiguous="YES">
-                                <rect key="frame" x="248" y="342" width="150" height="150"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat-emoji.png" translatesAutoresizingMaskIntoConstraints="NO" id="6398" fixedFrame="YES">
+                                <rect key="frame" x="234" y="331" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6399" translatesAutoresizingMaskIntoConstraints="NO" image="hamster-emoji.png" misplaced="YES" ambiguous="YES">
-                                <rect key="frame" x="48" y="606" width="150" height="150"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hamster-emoji.png" translatesAutoresizingMaskIntoConstraints="NO" id="6399" fixedFrame="YES">
+                                <rect key="frame" x="28" y="589" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6400" translatesAutoresizingMaskIntoConstraints="NO" image="koala-emoji.png" misplaced="YES" ambiguous="YES">
-                                <rect key="frame" x="266" y="606" width="150" height="150"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="koala-emoji.png" translatesAutoresizingMaskIntoConstraints="NO" id="6400" fixedFrame="YES">
+                                <rect key="frame" x="225" y="589" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6401" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="38" y="555" width="150" height="19"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6401">
+                                <rect key="frame" x="28" y="349" width="150" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Dog"/>
                                 <connections>
-                                    <segue id="6482" destination="6408" kind="show"/>
+                                    <segue destination="6408" kind="show" id="6482"/>
                                 </connections>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6402" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="326" y="549" width="150" height="19"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6402">
+                                <rect key="frame" x="234" y="349" width="150" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Cat"/>
                                 <connections>
-                                    <segue id="7007" destination="6408" kind="show"/>
+                                    <segue destination="6408" kind="show" id="7007"/>
                                 </connections>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6403" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="28" y="807" width="150" height="19"/>
-                                <state key="normal" title="Hamster"/>
-                                <connections>
-                                    <segue id="7061" destination="6408" kind="show"/>
-                                </connections>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6404">
+                                <rect key="frame" x="234" y="596" width="150" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6404" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="282" y="814" width="150" height="19"/>
                                 <state key="normal" title="Koala"/>
                                 <connections>
-                                    <segue id="7117" destination="6408" kind="show"/>
+                                    <segue destination="6408" kind="show" id="7117"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" id="19314" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="28" y="596" width="150" height="170"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Hamster"/>
+                                <connections>
+                                    <segue id="19657" destination="6408" kind="show"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <constraints>
-                            <constraint id="16424" firstItem="6397" firstAttribute="leading" secondItem="6137" secondAttribute="leadingMargin" constant="10"/>
-                            <constraint id="16425" firstItem="6399" firstAttribute="leading" secondItem="6137" secondAttribute="leadingMargin" constant="10"/>
-                            <constraint id="16427" firstAttribute="trailingMargin" secondItem="6400" secondAttribute="trailing" constant="10"/>
-                            <constraint id="16428" firstItem="6398" firstAttribute="leading" secondItem="6397" secondAttribute="trailing" constant="10"/>
-                            <constraint id="16429" firstItem="6400" firstAttribute="leading" secondItem="6399" secondAttribute="trailing" constant="10"/>
-                            <constraint id="16690" firstItem="6396" firstAttribute="bottom" secondItem="6397" secondAttribute="top" constant="5"/>
-                            <constraint id="16691" firstItem="6133" firstAttribute="bottom" secondItem="6396" secondAttribute="top" constant="5"/>
-                            <constraint id="16692" firstItem="6396" firstAttribute="leading" secondItem="6137" secondAttribute="leadingMargin" constant="5"/>
-                            <constraint id="16693" firstAttribute="trailingMargin" secondItem="6396" secondAttribute="trailing" constant="5"/>
-                            <constraint id="16962" firstItem="6134" firstAttribute="top" secondItem="6399" secondAttribute="bottom" constant="10"/>
-                            <constraint id="16963" firstItem="6134" firstAttribute="top" secondItem="6400" secondAttribute="bottom" constant="10"/>
-                            <constraint id="16964" firstItem="6400" firstAttribute="top" secondItem="6398" secondAttribute="bottom" constant="10"/>
-                            <constraint id="16965" firstItem="6399" firstAttribute="top" secondItem="6397" secondAttribute="bottom" constant="10"/>
-                            <constraint id="17242" firstAttribute="trailingMargin" secondItem="6398" secondAttribute="trailing" constant="10"/>
-                            <constraint id="17243" firstItem="6396" firstAttribute="bottom" secondItem="6398" secondAttribute="top" constant="5"/>
-                            <constraint id="17524" firstItem="6397" firstAttribute="centerY" secondItem="6396" secondAttribute="bottom" constant="30"/>
-                        </constraints>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem title="Title" id="6181" key="navigationItem"/>
+                    <navigationItem key="navigationItem" title="Pets" id="6181"/>
                     <connections>
-                        <outlet property="dogButton" destination="6401" id="name-outlet-6401"/>
                         <outlet property="catButton" destination="6402" id="name-outlet-6402"/>
-                        <outlet property="hamsterButton" destination="6403" id="name-outlet-6403"/>
-                        <outlet property="koalaButton" destination="6404" id="name-outlet-6404"/>
-                        <outlet property="dogImage" destination="6397" id="name-outlet-6397"/>
                         <outlet property="catImage" destination="6398" id="name-outlet-6398"/>
+                        <outlet property="dogButton" destination="6401" id="name-outlet-6401"/>
+                        <outlet property="dogImage" destination="6397" id="name-outlet-6397"/>
                         <outlet property="hamsterImage" destination="6399" id="name-outlet-6399"/>
+                        <outlet property="koalaButton" destination="6404" id="name-outlet-6404"/>
                         <outlet property="koalaImage" destination="6400" id="name-outlet-6400"/>
                         <outlet property="logo" destination="6396" id="name-outlet-6396"/>
+                        <outlet property="hamsterButton" destination="19314" id="name-outlet-19314"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6138" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-741" y="899"/>
         </scene>
+        <!--Animal Detail View Controller-->
         <scene sceneID="6407">
             <objects>
-                <viewController id="6408" sceneMemberID="viewController" customClass="AnimalDetailViewController">
+                <viewController id="6408" customClass="AnimalDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6405"/>
                         <viewControllerLayoutGuide type="bottom" id="6406"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6409">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="12457" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="16" y="98" width="736" height="180"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="12457">
+                                <rect key="frame" x="16" y="98" width="343" height="180"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="13557" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13557">
                                 <rect key="frame" x="16" y="286" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="14276" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="14276">
                                 <rect key="frame" x="16" y="315" width="343" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -252,54 +243,62 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="14530" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
-                                <rect key="frame" x="0.0" y="507" width="375" height="305"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="14530">
+                                <rect key="frame" x="0.0" y="507" width="389" height="305"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="14531" reuseIdentifier="entryCellId">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="entryCellId" id="14531">
+                                        <rect key="frame" x="0.0" y="28" width="389" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="14531" id="14532">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="389" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" borderStyle="roundedRect" minimumFontSize="17" id="14535" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="14535">
                                 <rect key="frame" x="16" y="469" width="296" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="15910" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15910">
                                 <rect key="frame" x="320" y="469" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What do you think about our pet?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19909">
+                                <rect key="frame" x="16" y="440" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="addDescButton" destination="15910" id="name-outlet-15910"/>
                         <outlet property="animalImage" destination="12457" id="name-outlet-12457"/>
-                        <outlet property="nameLabel" destination="13557" id="name-outlet-13557"/>
+                        <outlet property="desciptionTableView" destination="14530" id="name-outlet-14530"/>
                         <outlet property="descriptionField" destination="14276" id="name-outlet-14276"/>
                         <outlet property="descriptionTextField" destination="14535" id="name-outlet-14535"/>
-                        <outlet property="desciptionTableView" destination="14530" id="name-outlet-14530"/>
-                        <outlet property="addDescButton" destination="15910" id="name-outlet-15910"/>
+                        <outlet property="nameLabel" destination="13557" id="name-outlet-13557"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6410" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="220" y="882"/>
+            <point key="canvasLocation" x="-237" y="895"/>
         </scene>
     </scenes>
     <resources>
-        <image name="dog-emoji.png" width="600" height="600"/>
         <image name="cat-emoji.png" width="256" height="256"/>
+        <image name="dog-emoji.png" width="600" height="600"/>
         <image name="hamster-emoji.png" width="160" height="160"/>
-        <image name="koala-emoji.png" width="256" height="256"/>
         <image name="kaf-logo.PNG" width="1080" height="1080"/>
+        <image name="koala-emoji.png" width="256" height="256"/>
     </resources>
 </document>
