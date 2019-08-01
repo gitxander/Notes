@@ -47,6 +47,7 @@ namespace notes
                 entryTable.Source = new EntryTableViewSource(allEntry, this);
                 entryTable.ReloadData();
             };
+
         }
 
         //public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)

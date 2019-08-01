@@ -144,6 +144,25 @@
         <Compile Include="EntryBodyViewController.designer.cs">
           <DependentUpon>EntryBodyViewController.cs</DependentUpon>
         </Compile>
+        <Compile Include="Animal.cs" />
+        <Compile Include="AnimalDetailViewController.cs" />
+        <Compile Include="AnimalDetailViewController.designer.cs">
+          <DependentUpon>AnimalDetailViewController.cs</DependentUpon>
+        </Compile>
+        <Compile Include="AnimalViewController.cs" />
+        <Compile Include="AnimalViewController.designer.cs">
+          <DependentUpon>AnimalViewController.cs</DependentUpon>
+        </Compile>
+    </ItemGroup>
+    <ItemGroup>
+      <BundleResource Include="Resources\dog.jpg" />
+      <BundleResource Include="Resources\cat.jpg" />
+      <BundleResource Include="Resources\hamster.jpg" />
+      <BundleResource Include="Resources\dog-emoji.png" />
+      <BundleResource Include="Resources\cat-emoji.png" />
+      <BundleResource Include="Resources\hamster-emoji.png" />
+      <BundleResource Include="Resources\koala-emoji.png" />
+      <BundleResource Include="Resources\kaf-logo.PNG" />
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
