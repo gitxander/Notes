@@ -45,34 +45,41 @@ namespace notes
             koala.Description = "desc";
 
             animal.Add(koala);
-            selectedAnimal.Description = "Dogs can smell and hear better than humans, " +
-                "but cannot see well in color because they are color blind. " +
-                "Due to the anatomy of the eye, dogs can see better in dim light than humans. " +
-                "They also have a wider field of vision.";
-
+            
             dogButton.TouchUpInside += (s, e) =>
             {
                 //selectedAnimal = animal.Find(x => x.Name == "Dog");
                 selectedAnimal.Name = "Dog";
-                
+                selectedAnimal.Description = "A dog is a man's best friend! They are loyal and they will love you for their lifetime." +
+                "They have thick furs which protect them from weather. They bark, woof, or growl whenever they want." +
+                "Dogs usually want you to rub their belly and play with them.";
+
             };
 
             catButton.TouchUpInside += (s, e) =>
             {
                 //selectedAnimal = animal.Find(x => x.Name == "Cat");
                 selectedAnimal.Name = "Cat";
+                selectedAnimal.Description = "Cats are moody. They usually stay in a corner. Most of the time they just ignore you." +
+                "They have sharp paws which could they use to destroy your new sofa. Nonetheless, some of them are still cute. " +
+                "You will love them no matter what.";
             };
 
             hamsterButton.TouchUpInside += (s, e) =>
             {
                 //selectedAnimal = animal.Find(x => x.Name == "Hamster");
                 selectedAnimal.Name = "Hamster";
+                selectedAnimal.Description = "Hamsters are small and cute. They are like a fur ball. Always running around and using" +
+                " their cute little teeths to chew. They love to play around and you can hold them on your little hands. I would be nice " +
+                "if you have one or two and give them a cute little house of their own.";
             };
 
             koalaButton.TouchUpInside += (s, e) =>
             {
                 //selectedAnimal = animal.Find(x => x.Name == "Koala");
                 selectedAnimal.Name = "Koala";
+                selectedAnimal.Description = "Koalas are also cute. They live on the trees. Eat on the trees. Sleep on the trees." +
+                "They'll climb trees and stay there for long. ";
             };
         }
 
