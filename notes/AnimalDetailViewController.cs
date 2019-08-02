@@ -34,7 +34,7 @@ namespace notes
 
                 desciptionTableView.Source = new EntryTableViewSource(allEntry, this);
                 desciptionTableView.ReloadData();
-
+                descriptionTextField.Text = "";
             };
 
         }
